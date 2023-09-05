@@ -1,0 +1,45 @@
+body{background-color: black;
+width: 100%;}
+*{
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+width: 10%;
+font-size: 3rem;
+}
+header nav{
+}
+header nav a{
+  font-size: 30px;
+  padding: 0 1rem;
+}
+.contents{
+  width: 80%;
+  margin: 0 auto;
+}
+h2{width: 95%;
+margin: 20px auto;}
+ul{display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+ul li{width: 20%;
+  display: inline-block;}
+ul li figure{}
+ul li figure img{ width: 100%;}
+ul li figure figcaption{}
+ul li figure figcaption p{font-size: 20px;}
