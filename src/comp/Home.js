@@ -14,13 +14,11 @@ import 'swiper/css/pagination';
 function Home() {
     const [data, setData] = useState([]);
     const navigate = useNavigate();
-    const param = useParams();
-    console.log(param.id)
-
+    
     useEffect(() => {
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=f89a6c1f22aca3858a4ae7aef10de967')
             .then(res => {
-                console.log(res.data.results)
+                // console.log(res.data.results)
                 setData(res.data.results)
             })
     }, []);
@@ -39,15 +37,16 @@ function Home() {
                             <SwiperSlide key={item.id} className="visualSlide">
                                 <div className="movie-background"
                                     style={{
-                                        backgroundImage: `url('https://image.tmdb.org/t/p/original${item.backdrop_path}')`,
+                                        backgroundImage: `url('https://image.tmdb.org/t/p/original/${item.backdrop_path}')`
                                     }} >
+                                    <p></p>
                                     <div className='left'>
                                         <h1 data-aos="fade-down-right">{item.title}</h1>
                                         <p>{item.overview}</p>
-                                        <button onClick={() => { Navigate(`/detail/${item.id}`) }}>Watch now</button>
+                                        <button onClick={() => { navigate(`/detail/${item.id}`) }}>view Detail</button>
                                     </div>
                                     <div className='right'>
-                                        <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} />
+                                        <p><img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} /></p>
                                     </div>
                                 </div>
                             </SwiperSlide>
