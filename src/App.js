@@ -18,8 +18,8 @@ function App() {
           <h1><Link to="/">FLIX</Link></h1>
           <nav>
             <Link to="/Popular">Popular</Link>
-            <Link to="/List">movie</Link>
-            <Link to="/Item">TV</Link>
+            <Link to="/List">Top rated</Link>
+            <Link to="/Item">TV_popular</Link>
             <Link to="/searching">search</Link>
           </nav>
         </header>

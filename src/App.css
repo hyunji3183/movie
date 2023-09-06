@@ -14,6 +14,7 @@ body {
   list-style-type: none;
   text-decoration: none;
   font-family: "NotoSansKR-Medium";
+  font-weight: bold;
 }
 
 header {
@@ -42,7 +43,7 @@ header nav {
 }
 
 header nav a {
-  font-size: 26px;
+  font-size: 20px;
   padding: 0 1rem;
   border: 4px solid white;
   border-radius: 30px;
